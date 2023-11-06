@@ -40,7 +40,10 @@ namespace Calculradora_em_C_
 
         private void button18_Click(object sender, EventArgs e)
         {
-
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+            txtResultado.Text = "";
+            operacao = "divisao";
+            lblOperacao.Text = "/";
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -105,11 +108,52 @@ namespace Calculradora_em_C_
                         valor2));
                         break;
                 case "subtracao":
-                        // código 2
+                    Subtracao calculadoraSbtracao = new Subtracao();
+                    txtResultado.Text = Convert.ToString(calculadoraSbtracao.subtrair(valor1,
+                        valor2));
                         break;
-             }
+                case "multiplicacao":
+                    Multiplicacao calculadoraMultiplicacao = new Multiplicacao();
+                    txtResultado.Text = Convert.ToString(calculadoraMultiplicacao.multiplicar(valor1,
+                        valor2));
+                        break;
+                case "divisao":
+                    Divisao calculadoraDivisao = new Divisao();
+                    txtResultado.Text = Convert.ToString(calculadoraDivisao.dividir(valor1,
+                        valor2));
+                    break;
+            }
         }
-            
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+            txtResultado.Text = "";
+            operacao = "subtracao";
+            lblOperacao.Text = "-";
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+            txtResultado.Text = "";
+            operacao = "multiplicacao";
+            lblOperacao.Text = "X";
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text = "";
+            lblOperacao.Text = "";
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            txtResultado.Text = "";
+            lblOperacao.Text = "";
+            valor1 = 0;
+            valor2 = 0;
+        }
 
         private void button15_Click(object sender, EventArgs e)
         {
@@ -129,6 +173,42 @@ namespace Calculradora_em_C_
         public decimal somar(decimal valor1, decimal valor2)
         {
             return valor1 + valor2;
+        }
+    }
+
+    public class Subtracao
+    {
+        public Subtracao()
+        {
+        }
+
+        public decimal subtrair(decimal valor1, decimal valor2)
+        {
+            return valor1 - valor2;
+        }
+    }
+
+    public class Multiplicacao
+    {
+        public Multiplicacao()
+        {
+        }
+
+        public decimal multiplicar(decimal valor1, decimal valor2)
+        {
+            return valor1 * valor2;
+        }
+    }
+
+    public class Divisao
+    {
+        public Divisao()
+        {
+        }
+
+        public decimal dividir(decimal valor1, decimal valor2)
+        {
+            return valor1 / valor2;
         }
     }
 }
