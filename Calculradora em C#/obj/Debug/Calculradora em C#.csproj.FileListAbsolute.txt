@@ -1,0 +1,10 @@
+C:\Users\pedro\source\repos\Calculradora em C#\Calculradora em C#\bin\Debug\Calculradora em C#.exe.config
+C:\Users\pedro\source\repos\Calculradora em C#\Calculradora em C#\bin\Debug\Calculradora em C#.exe
+C:\Users\pedro\source\repos\Calculradora em C#\Calculradora em C#\bin\Debug\Calculradora em C#.pdb
+C:\Users\pedro\source\repos\Calculradora em C#\Calculradora em C#\obj\Debug\Calculradora em C#.csproj.AssemblyReference.cache
+C:\Users\pedro\source\repos\Calculradora em C#\Calculradora em C#\obj\Debug\Calculradora_em_C_.Properties.Resources.resources
+C:\Users\pedro\source\repos\Calculradora em C#\Calculradora em C#\obj\Debug\Calculradora em C#.csproj.GenerateResource.cache
+C:\Users\pedro\source\repos\Calculradora em C#\Calculradora em C#\obj\Debug\Calculradora em C#.csproj.CoreCompileInputs.cache
+C:\Users\pedro\source\repos\Calculradora em C#\Calculradora em C#\obj\Debug\Calculradora em C#.exe
+C:\Users\pedro\source\repos\Calculradora em C#\Calculradora em C#\obj\Debug\Calculradora em C#.pdb
+C:\Users\pedro\source\repos\Calculradora em C#\Calculradora em C#\obj\Debug\Calculradora_em_C_.Form1.resources
